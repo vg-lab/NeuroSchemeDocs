@@ -29,6 +29,10 @@ Installation and running
 
 NeuroScheme can be downloaded from the `NeuroScheme Homepage`_ for Linux and Mac operating systems and executed locally. Additionally it can be executed using a docker image. 
 
+^^^^^^^^^^^^^^^^^
+Executing locally
+^^^^^^^^^^^^^^^^^
+
 The application options and parameters are:
 
 +------------------------+---------------------------------+------------------------------------------------------------------------------------------+
@@ -90,11 +94,15 @@ A test data for NeuroScheme (for Congen and Cortex domains) can be downloaded fr
 * https://vg-lab.es/apps/NeuroScheme/example-data/neuroscheme-cortex-example-data.xml
 * http://neuromorpho.org/dableFiles/allen%20cell%20types/CNG%20version/H16-03-001-01-09-01_559391771_m.CNG.swc
 
+^^^^^^^^^^^^^^
+Docker example
+^^^^^^^^^^^^^^
+
 When Using a docker image replace the folder **$(pwd)/neuroscheme-example-data** by the the local folder with your local data. 
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 9,11
+  :emphasize-lines: 10,12
 
    # Pull the image
    docker pull vglab/neuroscheme:0.4.0-nvidia-ubuntu-16.04
@@ -103,6 +111,7 @@ When Using a docker image replace the folder **$(pwd)/neuroscheme-example-data**
    wget https://vg-lab.es/apps/NeuroScheme/example-data/neuroscheme-congen-example-data.json
    wget https://vg-lab.es/apps/NeuroScheme/example-data/neuroscheme-cortex-example-data.xml
    wget http://neuromorpho.org/dableFiles/allen%20cell%20types/CNG%20version/H16-03-001-01-09-01_559391771_m.CNG.swc
+   cd ..
    # Run cortex example
    docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/neuroscheme-example-data:/data  --privileged vglab/neuroscheme:0.4.0-nvidia-ubuntu-16.04 /usr/bin/NeuroScheme -d cortex -xml /data/neuroscheme-cortex-example-data.xml
    # Run congen example
