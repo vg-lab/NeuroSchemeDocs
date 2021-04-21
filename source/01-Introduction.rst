@@ -84,6 +84,8 @@ The application options and parameters are:
 
 If the options are incompatible or its parameters invalid the application will abort the execution and will show the help message in the console. 
 
+.. _testDataset-label:
+
 ^^^^^^^^^^^^
 Test dataset
 ^^^^^^^^^^^^
