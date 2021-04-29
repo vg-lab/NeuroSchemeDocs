@@ -104,10 +104,11 @@ When Using a docker image replace the folder **$(pwd)/neuroscheme-example-data**
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 10,12
+  :emphasize-lines: 11,13
 
+   xhost +local:docker
    # Pull the image
-   docker pull vglab/neuroscheme:0.4.0-nvidia-ubuntu-16.04
+   docker pull vglab/neuroscheme:0.5.0-nvidia-ubuntu-16.04
    # Download example data
    mkdir neuroscheme-example-data && cd neuroscheme-example-data
    wget https://vg-lab.es/apps/NeuroScheme/example-data/neuroscheme-congen-example-data.json
@@ -115,13 +116,7 @@ When Using a docker image replace the folder **$(pwd)/neuroscheme-example-data**
    wget http://neuromorpho.org/dableFiles/allen%20cell%20types/CNG%20version/H16-03-001-01-09-01_559391771_m.CNG.swc
    cd ..
    # Run cortex example
-   docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/neuroscheme-example-data:/data  --privileged vglab/neuroscheme:0.4.0-nvidia-ubuntu-16.04 /usr/bin/NeuroScheme -d cortex -xml /data/neuroscheme-cortex-example-data.xml
+   docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/neuroscheme-example-data:/data  --privileged vglab/neuroscheme:0.5.0-nvidia-ubuntu-16.04 /usr/bin/NeuroScheme -d cortex -xml /data/neuroscheme-cortex-example-data.xml
    # Run congen example
-   docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/neuroscheme-example-data:/data  --privileged vglab/neuroscheme:0.4.0-nvidia-ubuntu-16.04 /usr/bin/NeuroScheme -d congen --json /data/neuroscheme-congen-example-data.json
+   docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/neuroscheme-example-data:/data  --privileged vglab/neuroscheme:0.5.0-nvidia-ubuntu-16.04 /usr/bin/NeuroScheme -d congen --json /data/neuroscheme-congen-example-data.json
 
-.. note::
-   If running the docker image you get the error  ``No protocol specified``  the following command must be executed before the docker command:
-
-   .. code-block:: bash
-
-      xhost local:root
