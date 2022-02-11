@@ -198,7 +198,7 @@ latex_maketitle = r'''
   {\Huge NeuroScheme Documentation}\\[4ex]
   {\Large Version 1.0.0}\\[4ex]
   {\Large F\'{e}lix de las Pozas \'{A}lvarez}\\[4ex]
-  {\Large April 2021}\\[16ex]
+  {\Large February 2022}\\[16ex]
   {\Large Visualization \& Graphics Lab, Universidad Rey Juan Carlos}\\[4ex]
   \includegraphics[width=3cm,height=3cm]{logo.png}
 \end{center}

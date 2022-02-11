@@ -70,6 +70,15 @@ The **Events** menu provides actions regarding the communication with other appl
 - **Send focus on selection**: Publishes a focus event on the selected entities. 
 - **Auto focus on selection**: Enables or disables the automatic publication of a focus event on the selected entities.
 
+^^^^^^^^^^
+Tools Menu
+^^^^^^^^^^
+
+The **Tools** menu provides options to execute and configure the recording feature.
+
+- **Recorder**: Shows the recorder configuration dialog and starts recording if the user clicks the **Start** button.
+- **Advanced recorder options**: Enables or disables additional recorder configuration options.
+
 ^^^^^^^^^
 Help Menu
 ^^^^^^^^^
@@ -108,6 +117,39 @@ From left to right:
 - **Automatically send focus event on selection**: Enables/Disables the automatic publication of a focus event on the selected entities. 
 - **Send focus event of displayed entitites**: Sends a focus event on the currently displayed entities. 
 - **Automatically send focus event on displayed**: Enables/Disables the automatic publication of a focus event on the displayed entities. 
+- **Recorder**: Shows the recorder configuration dialog and starts recording if the user clicks on the **Start** button. 
+
+--------
+Recorder
+--------
+
+The recording feature can be activated using the **Tools** menu or by clicking the **Recorder** icon in the toolbar. The user will be presented with the recorder configuration dialog (:numref:`figA`).
+
+.. _figA:
+
+.. figure:: images/NSImage009.png
+   :alt: Recorder configuration dialog.
+   :align: center
+
+   Recorder configuration.
+
+The recorder will generate a mp4 video if the media application **ffmpeg** is detected and available, if not the generated output will be individual frames. The **frames per second** of the output can be specified here. The user can choose explicilty which worker (video or frames) to use to generate the output in the advanced configuration dialog (:numref:`figB`) (enabled using the **Advanced recorder options** checkbox in the **Tools** menu).
+
+.. _figB:
+
+.. figure:: images/NSImage010.png
+   :alt: Recorder advanced configuration dialog.
+   :align: center
+
+   Recorder advanced configuration dialog.
+
+Using the **advanced configuration** an area of the application can be selected for recording or an individual widget.
+
+If the output is a video the user can specify the location of the generated file using the **Select** button. If the output is a sequence of frames the user can specify the destination directory using the **Select** button in the dialog.
+
+The dimensions of the output are shown and can be modified with the **scale** options. 
+
+While the recorder is working the associated toolbar button will remain down and the user must click it again to stop it. The recorder can also be stopped using the **Recorder** button in the **Tools** menu or the keyboard shortcut **Ctrl + R**.
 
 ------
 Panels
@@ -243,4 +285,5 @@ The following actions can be performed by clicking the button, selecting the opt
 - **Ctrl + C**: Show/Hide connectivity in the view panes. 
 - **Ctrl + I**: Show/Hide non-hierarchical entities.  
 - **Ctrl + S**: Publish selection event. 
+- **Ctrl + R**: Launch recorder.
 - **Ctrl + Q**: Close application.

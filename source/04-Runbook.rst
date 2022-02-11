@@ -26,7 +26,7 @@ The application should load the example dataset and present the :numref:`rbfig1`
 .. figure:: images/RBNSImage001.png
    :alt: Cortex example data.
    :align: center
-   :width: 820
+   :width: 797
    :scale: 60%
 
    NeuroScheme with the cortex example data.
@@ -42,7 +42,7 @@ Select column 0 (c0) and use the context menu (right-click) and select 'Expand c
 .. figure:: images/RBNSImage002.png
    :alt: Column 1 and microcolums 0 and 1 of column 0.
    :align: center
-   :width: 820
+   :width: 795
    :scale: 60%
 
    Column 1 and microcolumn 0 and 1 of column 0.
@@ -52,7 +52,7 @@ Select column 0 (c0) and use the context menu (right-click) and select 'Expand c
 .. figure:: images/RBNSImage003.png
    :alt: Column 1 and microcolum 1 and neurons of microcolum 0 of column 0.
    :align: center
-   :width: 820
+   :width: 795
    :scale: 60%
 
    Column 1 and microcolum 1 and neurons of microcolum 0 of column 0.
@@ -64,7 +64,7 @@ Do the same with the column 1 and microcolumn 1 of column 0 until the pane shows
 .. figure:: images/RBNSImage004.png
    :alt: All neurons of the dataset.
    :align: center
-   :width: 820
+   :width: 793
    :scale: 60%
 
    All neurons of the dataset.
@@ -80,7 +80,7 @@ Select the neuron 'n3' and open the edition panel using the 'Edit' entry in the 
 .. figure:: images/RBNSImage005.png
    :alt: All neurons of the dataset and the edition panel. 
    :align: center
-   :width: 955
+   :width: 930
    :scale: 60%
 
    All neurons of the dataset and the edition panel. 
@@ -92,7 +92,7 @@ Modify the following properties and click the **Save** button. The pane should s
 .. figure:: images/RBNSImage006.png
    :alt: Modified the properties of neuron n3. 
    :align: center
-   :width: 955
+   :width: 935
    :scale: 60%
 
    Modified the properties of neuron n3. 
@@ -108,7 +108,7 @@ Click the **Home** button (or click 'Ctrl+H') to go back to the first pane view 
 .. figure:: images/RBNSImage007.png
    :alt: A pane showing the colums and other two panes showing the neurons of column 0 and column 1. 
    :align: center
-   :width: 820
+   :width: 799
    :scale: 60%
 
    A pane showing the colums and other two panes showing the neurons of column 0 and column 1. 
@@ -134,7 +134,7 @@ The application should load the example dataset and present the :numref:`rbfig8`
 .. figure:: images/RBNSImage008.png
    :alt: Congen example data.
    :align: center
-   :width: 820
+   :width: 794
    :scale: 60%
 
    NeuroScheme with the congen example data.
@@ -150,7 +150,7 @@ Click the **Search and Filter** button in the toolbar to open the 'Search and fi
 .. figure:: images/RBNSImage009.png
    :alt: Search and Filter panel for pane 0.
    :align: center
-   :width: 820
+   :width: 797
    :scale: 60%
 
    Search and Filter panel for pane 0.
@@ -169,7 +169,7 @@ Y     Child depth
 .. figure:: images/RBNSImage010.png
    :alt: ScatterPlot visualization.
    :align: center
-   :width: 820
+   :width: 795
    :scale: 60%
 
    ScatterPlot layout.
@@ -181,7 +181,7 @@ Modify the **Layout** setting to **Circular**. The pane should look like :numref
 .. figure:: images/RBNSImage011.png
    :alt: Circular layout.
    :align: center
-   :width: 820
+   :width: 799
    :scale: 60%
 
    Circular layout.
@@ -193,7 +193,7 @@ Add a **Sort** filter. Sort by **Nb of neurons** in descendant order. The pane s
 .. figure:: images/RBNSImage012.png
    :alt: Sort by Nb of neurons.
    :align: center
-   :width: 820
+   :width: 798
    :scale: 60%
 
    Sort by Nb of neurons.
@@ -205,7 +205,7 @@ Add a **Filter**. Filter by **Child depth** only the ones with depth 0. The pane
 .. figure:: images/RBNSImage013.png
    :alt: Filter by child depth.
    :align: center
-   :width: 820
+   :width: 799
    :scale: 60%
 
    Filter by child depth.
@@ -218,7 +218,7 @@ Modify the layout to **Free**. Now hold down the **Shift key** and **left click*
 .. figure:: images/RBNSImage014.png
    :alt: Free placement of entities.
    :align: center
-   :width: 820
+   :width: 799
    :scale: 60%
 
    Free placement of entities.
@@ -234,7 +234,7 @@ Entity and relationships edition
 .. figure:: images/RBNSImage015.png
    :alt: Entity edition panel.
    :align: center
-   :width: 820
+   :width: 799
    :scale: 60%
 
    Entity edition panel.
@@ -248,8 +248,8 @@ Put the cursor over the pop0 to pop7 relationship, when the cursor is over the r
 .. figure:: images/RBNSImage016.png
    :alt: Relationship edition panel.
    :align: center
-   :width: 820
-   :scale: 60%
+   :width: 1215
+   :scale: 50%
 
    Relationship edition panel.
 
