@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'NeuroScheme'
-copyright = '2021, URJC Universidad Rey Juan Carlos'
+copyright = '2022, URJC Universidad Rey Juan Carlos'
 author = 'URJC Universidad Rey Juan Carlos'
 
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '1.0.0'
+release = '0.7.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -196,7 +196,7 @@ latex_maketitle = r'''
 \begin{center}
   \includegraphics[width=6cm,height=6cm]{neuroscheme.png}\\[8ex]
   {\Huge NeuroScheme Documentation}\\[4ex]
-  {\Large Version 1.0.0}\\[4ex]
+  {\Large Version 0.7.1}\\[4ex]
   {\Large F\'{e}lix de las Pozas \'{A}lvarez}\\[4ex]
   {\Large February 2022}\\[16ex]
   {\Large Visualization \& Graphics Lab, Universidad Rey Juan Carlos}\\[4ex]
@@ -219,7 +219,7 @@ latex_elements = {
     %\fancyfoot[LO]{{\py@HeaderFamily\nouppercase{\rightmark}}}
     %\fancyfoot[RE]{{\py@HeaderFamily\nouppercase{\leftmark}}}
 % add copyright stuff
-    \fancyfoot[LO,RE]{{ \textcopyright\ 2021 Visualization \& Graphics Lab VG-Lab URJC.}}
+    \fancyfoot[LO,RE]{{ \textcopyright\ 2022 Visualization \& Graphics Lab VG-Lab URJC.}}
 % again original stuff
     \fancyhead[LE,RO]{{\py@HeaderFamily \@title\sphinxheadercomma\py@release}}
     \renewcommand{\headrulewidth}{0.4pt}
@@ -233,7 +233,7 @@ latex_elements = {
     \renewcommand{\footrulewidth}{0.4pt}
 % add copyright stuff for example at left of footer on odd pages,
 % which is the case for chapter opening page by default
-    \fancyfoot[LO,RE]{{ \textcopyright\ 2021 Visualization \& Graphics Lab VG-Lab URJC.}}
+    \fancyfoot[LO,RE]{{ \textcopyright\ 2022 Visualization \& Graphics Lab VG-Lab URJC.}}
     }
 \makeatother
 ''',
