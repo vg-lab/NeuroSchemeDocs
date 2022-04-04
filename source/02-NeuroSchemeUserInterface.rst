@@ -76,8 +76,8 @@ Tools Menu
 
 The **Tools** menu provides options to execute and configure the recording feature.
 
-- **Recorder**: Shows the recorder configuration dialog and starts recording if the user clicks the **Start** button.
-- **Advanced recorder options**: Enables or disables additional recorder configuration options.
+- **Recorder**: Shows the recorder configuration dialog and starts recording if the user clicks the **Start Recording** button.
+- **Advanced recorder options**: Enables or disables additional recorder options in the configuration dialog.
 
 ^^^^^^^^^
 Help Menu
@@ -149,7 +149,11 @@ If the output is a video the user can specify the location of the generated file
 
 The dimensions of the output are shown and can be modified with the **scale** options. 
 
-While the recorder is working the associated toolbar button will remain down and the user must click it again to stop it. The recorder can also be stopped using the **Recorder** button in the **Tools** menu or the keyboard shortcut **Ctrl + R**.
+While the recorder is working the associated toolbar button will remain down and the icon will change every second with an image of a "Stop" button with REC letters written inside it. The user must click it again to stop the recording. The recorder can also be stopped using the **Recorder** button in the **Tools** menu or the keyboard shortcut **Ctrl + R**.
+
+.. note::
+   If the output is a video the filename of the output file will end with "_temporal" while recording. Once the recording has finished it will change to the selected output name in the configuration dialog. The application will warn if the user tries to exit the application while a recording is being made.
+
 
 .. warning::
    To record a video the system must have **ffmpeg** installed, preferably with Nvidia hardware acceleration. 

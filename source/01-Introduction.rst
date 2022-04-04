@@ -4,7 +4,7 @@ NeuroScheme Introduction
 
 **NeuroScheme** is a visual exploratory framework that facilitates the process of knowledge extraction from complex neural scenes. This framework contains a multilevel structure, following the different organizational levels of the brain. Schematic or iconic symbols have been designed to portray the entities at each level, providing graphical representations that emphasize relevant features while hiding less important information. These schematic views, together with a multilevel organization, allow the exploration of the brain at different scales, combining in the same view different levels of abstraction whose entities can be either schematically represented (at different abstraction levels) or geometrically depicted at the finest level of detail.
 
-This documentation is for NeuroScheme version 0.7.1 that can be obtained from the homepage.
+This documentation is for NeuroScheme version 0.7.2 that can be obtained from the homepage.
 
 --------------
 External Links
@@ -115,7 +115,7 @@ When Using a docker image replace the folder **$(pwd)/neuroscheme-example-data**
 
    xhost +local:docker
    # Pull the image
-   docker pull vglab/neuroscheme:0.7.1-nvidia-ubuntu-16.04
+   docker pull vglab/neuroscheme:0.7.2-nvidia-ubuntu-16.04
    # Download example data
    mkdir neuroscheme-example-data && cd neuroscheme-example-data
    wget https://vg-lab.es/apps/NeuroScheme/example-data/neuroscheme-congen-example-data.json
@@ -123,7 +123,7 @@ When Using a docker image replace the folder **$(pwd)/neuroscheme-example-data**
    wget http://neuromorpho.org/dableFiles/allen%20cell%20types/CNG%20version/H16-03-001-01-09-01_559391771_m.CNG.swc
    cd ..
    # Run cortex example
-   docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/neuroscheme-example-data:/data  --privileged vglab/neuroscheme:0.7.1-nvidia-ubuntu-16.04 /usr/bin/NeuroScheme -d cortex -xml /data/neuroscheme-cortex-example-data.xml
+   docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/neuroscheme-example-data:/data  --privileged vglab/neuroscheme:0.7.2-nvidia-ubuntu-16.04 /usr/bin/NeuroScheme -d cortex -xml /data/neuroscheme-cortex-example-data.xml
    # Run congen example
-   docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/neuroscheme-example-data:/data  --privileged vglab/neuroscheme:0.7.1-nvidia-ubuntu-16.04 /usr/bin/NeuroScheme -d congen --json /data/neuroscheme-congen-example-data.json
+   docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/neuroscheme-example-data:/data  --privileged vglab/neuroscheme:0.7.2-nvidia-ubuntu-16.04 /usr/bin/NeuroScheme -d congen --json /data/neuroscheme-congen-example-data.json
 
