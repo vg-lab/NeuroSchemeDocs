@@ -26,7 +26,7 @@ author = 'URJC Universidad Rey Juan Carlos'
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '0.7.3'
+release = '0.7.4'
 
 
 # -- General configuration ---------------------------------------------------
@@ -196,7 +196,7 @@ latex_maketitle = r'''
 \begin{center}
   \includegraphics[width=6cm,height=6cm]{neuroscheme.png}\\[8ex]
   {\Huge NeuroScheme Documentation}\\[4ex]
-  {\Large Version 0.7.3}\\[4ex]
+  {\Large Version 0.7.4}\\[4ex]
   {\Large F\'{e}lix de las Pozas \'{A}lvarez}\\[4ex]
   {\Large February 2022}\\[16ex]
   {\Large Visualization \& Graphics Lab, Universidad Rey Juan Carlos}\\[4ex]
