@@ -133,7 +133,7 @@ The recording feature can be activated using the **Tools** menu or by clicking t
 
    Recorder configuration.
 
-The recorder will generate a mp4 video if the media application **ffmpeg** is detected and available, if not the generated output will be individual frames. The **frames per second** of the output can be specified here. The user can choose explicilty which worker (video or frames) to use to generate the output in the advanced configuration dialog (:numref:`figB`) (enabled using the **Advanced recorder options** checkbox in the **Tools** menu).
+The recorder will generate a Matroska MKV video if the media application **ffmpeg** is detected and available, if not the generated output will be individual frames. The **frames per second** of the output can be specified here. The user can choose explicilty which worker (video or frames) to use to generate the output in the advanced configuration dialog (:numref:`figB`) (enabled using the **Advanced recorder options** checkbox in the **Tools** menu).
 
 .. _figB:
 
